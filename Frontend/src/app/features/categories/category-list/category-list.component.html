@@ -1,0 +1,20 @@
+<div style="display:flex; justify-content:flex-end; margin-bottom:15px;">
+  <button mat-raised-button color="primary" (click)="openCategoryDialog()">
+    + Nueva Categoría
+  </button>
+</div>
+
+<table class="table table-striped" style="width:100%; background:white;">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let cat of categories">
+      <td>{{ cat.id }}</td>
+      <td>{{ cat.name }}</td>
+    </tr>
+  </tbody>
+</table>

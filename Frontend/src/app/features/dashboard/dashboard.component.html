@@ -1,0 +1,26 @@
+<h1>Dashboard</h1>
+
+<div style="display:flex; gap:20px;">
+  
+  <mat-card style="width:250px;">
+    <mat-card-title>Total Productos</mat-card-title>
+    <mat-card-content>
+      <h2>{{ metrics.totalProducts }}</h2>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card style="width:250px;">
+    <mat-card-title>Total Categorías</mat-card-title>
+    <mat-card-content>
+      <h2>{{ metrics.totalCategories }}</h2>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card style="width:250px;">
+    <mat-card-title>Valor Inventario</mat-card-title>
+    <mat-card-content>
+      <h2>{{ metrics.inventoryValue | currency }}</h2>
+    </mat-card-content>
+  </mat-card>
+
+</div>

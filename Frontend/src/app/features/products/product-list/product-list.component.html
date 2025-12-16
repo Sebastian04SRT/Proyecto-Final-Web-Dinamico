@@ -1,0 +1,26 @@
+<div style="display:flex; justify-content:flex-end; margin-bottom:15px;">
+  <button mat-raised-button color="primary" (click)="openProductDialog()">
+    + Nuevo Producto
+  </button>
+</div>
+
+<table class="table table-striped" style="width:100%; background:white;">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Categoría</th>
+      <th>Precio</th>
+      <th>Stock</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let p of products">
+      <td>{{ p.id }}</td>
+      <td>{{ p.name }}</td>
+      <td>{{ p.category?.name }}</td>
+      <td>{{ p.price | currency }}</td>
+      <td>{{ p.stock }}</td>
+    </tr>
+  </tbody>
+</table>

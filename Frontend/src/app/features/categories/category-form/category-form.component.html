@@ -1,0 +1,13 @@
+<h2>Nueva Categoría</h2>
+
+<form (ngSubmit)="saveCategory()">
+  <mat-form-field appearance="outline" style="width:100%; margin-bottom:20px;">
+    <mat-label>Nombre de Categoría</mat-label>
+    <input matInput [(ngModel)]="category.name" name="name" required>
+  </mat-form-field>
+
+  <div style="display:flex; justify-content:flex-end; gap:10px;">
+    <button mat-button mat-dialog-close>Cancelar</button>
+    <button mat-raised-button color="primary" type="submit">Guardar</button>
+  </div>
+</form>
